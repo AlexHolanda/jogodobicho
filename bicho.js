@@ -518,7 +518,7 @@ function cruz(){
     cruzres5.innerHTML = B + D + C + A
     cruzres6.innerHTML = B + C + A + D
     cruzres7.innerHTML = B + A + C + D
-    cruzres8.innerHTML = B + C + A + D
+    cruzres8.innerHTML = B + C + D + A
     cruzres9.innerHTML = C + A + B + D
     cruzres10.innerHTML = C + A + D + B
     cruzres11.innerHTML = C + B + A + D
@@ -526,7 +526,7 @@ function cruz(){
     cruzres13.innerHTML = D + A + B + C
     cruzres14.innerHTML = D + B + C + A
     cruzres15.innerHTML = D + B + A + C
-    cruzres16.innerHTML = D + A + B + C
+    cruzres16.innerHTML = D + C + B + A
 
 }
 
@@ -561,7 +561,7 @@ function cruz_4(){
     cruzres5d4.innerHTML = B + D + C + A
     cruzres6d4.innerHTML = B + C + A + D
     cruzres7d4.innerHTML = B + A + C + D
-    cruzres8d4.innerHTML = B + C + A + D
+    cruzres8d4.innerHTML = B + D + A + C
     cruzres9d4.innerHTML = C + A + B + D
     cruzres10d4.innerHTML = C + A + D + B
     cruzres11d4.innerHTML = C + B + A + D
@@ -569,7 +569,7 @@ function cruz_4(){
     cruzres13d4.innerHTML = D + A + B + C
     cruzres14d4.innerHTML = D + B + C + A
     cruzres15d4.innerHTML = D + B + A + C
-    cruzres16d4.innerHTML = D + A + B + C
+    cruzres16d4.innerHTML = D + C + B + A
 
 }
 
@@ -604,7 +604,7 @@ function cruz_7(){
     cruzres5d7.innerHTML = B + D + C + A
     cruzres6d7.innerHTML = B + C + A + D
     cruzres7d7.innerHTML = B + A + C + D
-    cruzres8d7.innerHTML = B + C + A + D
+    cruzres8d7.innerHTML = B + D + A + C
     cruzres9d7.innerHTML = C + A + B + D
     cruzres10d7.innerHTML = C + A + D + B
     cruzres11d7.innerHTML = C + B + A + D
@@ -612,7 +612,7 @@ function cruz_7(){
     cruzres13d7.innerHTML = D + A + B + C
     cruzres14d7.innerHTML = D + B + C + A
     cruzres15d7.innerHTML = D + B + A + C
-    cruzres16d7.innerHTML = D + A + B + C
+    cruzres16d7.innerHTML = D + C + B + A
 
 }
 
