@@ -41,6 +41,12 @@ var jogo4 = [];
 var jogo5 = [];
 var jogo6 = [];
 
+var cruzdata = document.getElementById('cruzdata')
+var cruz1 = document.getElementById('cruz1')
+var cruz2 = document.getElementById('cruz2')
+var cruz3 = document.getElementById('cruz3')
+var cruz4 = document.getElementById('cruz4')
+var cruz3txt = document.getElementById('cruz3txt')
 
 function sorteio(a, b) {
     return Math.floor(Math.random() * (a - b) + b);
@@ -124,7 +130,7 @@ function gerar(){
     } else if ((`${jogo1[2]}${jogo1[3]}`) == '21' || (`${jogo1[2]}${jogo1[3]}`) == '22' || (`${jogo1[2]}${jogo1[3]}`) == '23' || (`${jogo1[2]}${jogo1[3]}`) == '24'){
         spanres1.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo1[2]}${jogo1[3]}`) == '25' || (`${jogo1[2]}${jogo1[3]}`) == '26' || (`${jogo1[2]}${jogo1[3]}`) == '27' || (`${jogo1[2]}${jogo1[3]}`) == '28'){
-        spanres1.innerHTML = 'Caneiro - GRUPO 07'
+        spanres1.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo1[2]}${jogo1[3]}`) == '29' || (`${jogo1[2]}${jogo1[3]}`) == '30' || (`${jogo1[2]}${jogo1[3]}`) == '31' || (`${jogo1[2]}${jogo1[3]}`) == '32'){
         spanres1.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo1[2]}${jogo1[3]}`) == '33' || (`${jogo1[2]}${jogo1[3]}`) == '34' || (`${jogo1[2]}${jogo1[3]}`) == '35' || (`${jogo1[2]}${jogo1[3]}`) == '36'){
@@ -178,7 +184,7 @@ function gerar(){
     } else if ((`${jogo2[2]}${jogo2[3]}`) == '21' || (`${jogo2[2]}${jogo2[3]}`) == '22' || (`${jogo2[2]}${jogo2[3]}`) == '23' || (`${jogo2[2]}${jogo2[3]}`) == '24'){
         spanres2.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo2[2]}${jogo2[3]}`) == '25' || (`${jogo2[2]}${jogo2[3]}`) == '26' || (`${jogo2[2]}${jogo2[3]}`) == '27' || (`${jogo2[2]}${jogo2[3]}`) == '28'){
-        spanres2.innerHTML = 'Caneiro - GRUPO 07'
+        spanres2.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo2[2]}${jogo2[3]}`) == '29' || (`${jogo2[2]}${jogo2[3]}`) == '30' || (`${jogo2[2]}${jogo2[3]}`) == '31' || (`${jogo2[2]}${jogo2[3]}`) == '32'){
         spanres2.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo2[2]}${jogo2[3]}`) == '33' || (`${jogo2[2]}${jogo2[3]}`) == '34' || (`${jogo2[2]}${jogo2[3]}`) == '35' || (`${jogo2[2]}${jogo2[3]}`) == '36'){
@@ -231,7 +237,7 @@ function gerar(){
     } else if ((`${jogo3[2]}${jogo3[3]}`) == '21' || (`${jogo3[2]}${jogo3[3]}`) == '22' || (`${jogo3[2]}${jogo3[3]}`) == '23' || (`${jogo3[2]}${jogo3[3]}`) == '24'){
         spanres3.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo3[2]}${jogo3[3]}`) == '25' || (`${jogo3[2]}${jogo3[3]}`) == '26' || (`${jogo3[2]}${jogo3[3]}`) == '27' || (`${jogo3[2]}${jogo3[3]}`) == '28'){
-        spanres3.innerHTML = 'Caneiro - GRUPO 07'
+        spanres3.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo3[2]}${jogo3[3]}`) == '29' || (`${jogo3[2]}${jogo3[3]}`) == '30' || (`${jogo3[2]}${jogo3[3]}`) == '31' || (`${jogo3[2]}${jogo3[3]}`) == '32'){
         spanres3.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo3[2]}${jogo3[3]}`) == '33' || (`${jogo3[2]}${jogo3[3]}`) == '34' || (`${jogo3[2]}${jogo3[3]}`) == '35' || (`${jogo3[2]}${jogo3[3]}`) == '36'){
@@ -284,7 +290,7 @@ function gerar(){
     } else if ((`${jogo4[2]}${jogo4[3]}`) == '21' || (`${jogo4[2]}${jogo4[3]}`) == '22' || (`${jogo4[2]}${jogo4[3]}`) == '23' || (`${jogo4[2]}${jogo4[3]}`) == '24'){
         spanres4.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo4[2]}${jogo4[3]}`) == '25' || (`${jogo4[2]}${jogo4[3]}`) == '26' || (`${jogo4[2]}${jogo4[3]}`) == '27' || (`${jogo4[2]}${jogo4[3]}`) == '28'){
-        spanres4.innerHTML = 'Caneiro - GRUPO 07'
+        spanres4.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo4[2]}${jogo4[3]}`) == '29' || (`${jogo4[2]}${jogo4[3]}`) == '30' || (`${jogo4[2]}${jogo4[3]}`) == '31' || (`${jogo4[2]}${jogo4[3]}`) == '32'){
         spanres4.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo4[2]}${jogo4[3]}`) == '33' || (`${jogo4[2]}${jogo4[3]}`) == '34' || (`${jogo4[2]}${jogo4[3]}`) == '35' || (`${jogo4[2]}${jogo4[3]}`) == '36'){
@@ -338,7 +344,7 @@ function gerar(){
     } else if ((`${jogo5[2]}${jogo5[3]}`) == '21' || (`${jogo5[2]}${jogo5[3]}`) == '22' || (`${jogo5[2]}${jogo5[3]}`) == '23' || (`${jogo5[2]}${jogo5[3]}`) == '24'){
         spanres5.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo5[2]}${jogo5[3]}`) == '25' || (`${jogo5[2]}${jogo5[3]}`) == '26' || (`${jogo5[2]}${jogo5[3]}`) == '27' || (`${jogo5[2]}${jogo5[3]}`) == '28'){
-        spanres5.innerHTML = 'Caneiro - GRUPO 07'
+        spanres5.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo5[2]}${jogo5[3]}`) == '29' || (`${jogo5[2]}${jogo5[3]}`) == '30' || (`${jogo5[2]}${jogo5[3]}`) == '31' || (`${jogo5[2]}${jogo5[3]}`) == '32'){
         spanres5.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo5[2]}${jogo5[3]}`) == '33' || (`${jogo5[2]}${jogo5[3]}`) == '34' || (`${jogo5[2]}${jogo5[3]}`) == '35' || (`${jogo5[2]}${jogo5[3]}`) == '36'){
@@ -391,7 +397,7 @@ function gerar(){
     } else if ((`${jogo6[2]}${jogo6[3]}`) == '21' || (`${jogo6[2]}${jogo6[3]}`) == '22' || (`${jogo6[2]}${jogo6[3]}`) == '23' || (`${jogo6[2]}${jogo6[3]}`) == '24'){
         spanres6.innerHTML = 'Cabra - GRUPO 06'
     } else if ((`${jogo6[2]}${jogo6[3]}`) == '25' || (`${jogo6[2]}${jogo6[3]}`) == '26' || (`${jogo6[2]}${jogo6[3]}`) == '27' || (`${jogo6[2]}${jogo6[3]}`) == '28'){
-        spanres6.innerHTML = 'Caneiro - GRUPO 07'
+        spanres6.innerHTML = 'Carneiro - GRUPO 07'
     } else if ((`${jogo6[2]}${jogo6[3]}`) == '29' || (`${jogo6[2]}${jogo6[3]}`) == '30' || (`${jogo6[2]}${jogo6[3]}`) == '31' || (`${jogo6[2]}${jogo6[3]}`) == '32'){
         spanres6.innerHTML = 'Camelo - GRUPO 08'
     } else if ((`${jogo6[2]}${jogo6[3]}`) == '33' || (`${jogo6[2]}${jogo6[3]}`) == '34' || (`${jogo6[2]}${jogo6[3]}`) == '35' || (`${jogo6[2]}${jogo6[3]}`) == '36'){
@@ -430,7 +436,7 @@ function gerar(){
         spanres6.innerHTML = 'Vaca - GRUPO 25'
     }
     
-
+    
 }
 
 function limparNumeros() {
@@ -479,4 +485,139 @@ function limparNumeros() {
     spanres5.innerHTML = ""
     spanres6.innerHTML = ""
 
+}
+
+function cruz(){
+    var cruz3sub
+    const data = new Date();
+    var dia = data.getDate();
+    var cruz1dia = dia + 3;
+    var cruz2dia = (dia + 3) + 3;
+    var cruz3dia =((dia + 3) + 3) + 3;
+
+    var dia1 = dia.toString()
+    var A = dia1.substring(1,2)
+    //cruzdata.innerHTML = A;
+
+    var cruz1dia1 = cruz1dia.toString()
+    var B = cruz1dia1.substring(1,2)
+    //cruz1.innerHTML = B;
+
+    var cruz2dia1 = cruz2dia.toString()
+    var C = cruz2dia1.substring(1,2)
+    //cruz2.innerHTML = C;
+
+    var cruz3dia1 = cruz3dia.toString()
+    var D = cruz3dia1.substring(1,2)
+    //cruz3.innerHTML = D;
+
+    cruzres1.innerHTML = A + B + C + D 
+    cruzres2.innerHTML = A + B + D + C
+    cruzres3.innerHTML = A + D + C + B
+    cruzres4.innerHTML = A + D + B + C
+    cruzres5.innerHTML = B + D + C + A
+    cruzres6.innerHTML = B + C + A + D
+    cruzres7.innerHTML = B + A + C + D
+    cruzres8.innerHTML = B + C + A + D
+    cruzres9.innerHTML = C + A + B + D
+    cruzres10.innerHTML = C + A + D + B
+    cruzres11.innerHTML = C + B + A + D
+    cruzres12.innerHTML = C + B + D + A
+    cruzres13.innerHTML = D + A + B + C
+    cruzres14.innerHTML = D + B + C + A
+    cruzres15.innerHTML = D + B + A + C
+    cruzres16.innerHTML = D + A + B + C
+
+}
+
+function cruz_4(){
+    var cruz3sub
+    const data = new Date();
+    var dia = data.getDate();
+    var cruz1diad4 = dia + 4;
+    var cruz2diad4 = (dia + 4) + 4;
+    var cruz3diad4 =((dia + 4) + 4) + 4;
+
+    var dia1 = dia.toString()
+    var A = dia1.substring(1,2)
+    //cruzdata.innerHTML = A;
+
+    var cruz1dia1d4 = cruz1diad4.toString()
+    var B = cruz1dia1d4.substring(1,2)
+    //cruz1.innerHTML = B;
+
+    var cruz2dia1d4 = cruz2diad4.toString()
+    var C = cruz2dia1d4.substring(1,2)
+    //cruz2.innerHTML = C;
+
+    var cruz3dia1d4 = cruz3diad4.toString()
+    var D = cruz3dia1d4.substring(1,2)
+    //cruz3.innerHTML = D;
+
+    cruzres1d4.innerHTML = A + B + C + D 
+    cruzres2d4.innerHTML = A + B + D + C
+    cruzres3d4.innerHTML = A + D + C + B
+    cruzres4d4.innerHTML = A + D + B + C
+    cruzres5d4.innerHTML = B + D + C + A
+    cruzres6d4.innerHTML = B + C + A + D
+    cruzres7d4.innerHTML = B + A + C + D
+    cruzres8d4.innerHTML = B + C + A + D
+    cruzres9d4.innerHTML = C + A + B + D
+    cruzres10d4.innerHTML = C + A + D + B
+    cruzres11d4.innerHTML = C + B + A + D
+    cruzres12d4.innerHTML = C + B + D + A
+    cruzres13d4.innerHTML = D + A + B + C
+    cruzres14d4.innerHTML = D + B + C + A
+    cruzres15d4.innerHTML = D + B + A + C
+    cruzres16d4.innerHTML = D + A + B + C
+
+}
+
+function cruz_7(){
+    var cruz3sub
+    const data = new Date();
+    var dia = data.getDate();
+    var cruz1diad7 = dia + 7;
+    var cruz2diad7 = (dia + 7) + 7;
+    var cruz3diad7 =((dia + 7) + 7) + 7;
+
+    var dia1 = dia.toString()
+    var A = dia1.substring(1,2)
+    //cruzdata.innerHTML = A;
+
+    var cruz1dia1d7 = cruz1diad7.toString()
+    var B = cruz1dia1d7.substring(1,2)
+    //cruz1.innerHTML = B;
+
+    var cruz2dia1d7 = cruz2diad7.toString()
+    var C = cruz2dia1d7.substring(1,2)
+    //cruz2.innerHTML = C;
+
+    var cruz3dia1d7 = cruz3diad7.toString()
+    var D = cruz3dia1d7.substring(1,2)
+    //cruz3.innerHTML = D;
+
+    cruzres1d7.innerHTML = A + B + C + D 
+    cruzres2d7.innerHTML = A + B + D + C
+    cruzres3d7.innerHTML = A + D + C + B
+    cruzres4d7.innerHTML = A + D + B + C
+    cruzres5d7.innerHTML = B + D + C + A
+    cruzres6d7.innerHTML = B + C + A + D
+    cruzres7d7.innerHTML = B + A + C + D
+    cruzres8d7.innerHTML = B + C + A + D
+    cruzres9d7.innerHTML = C + A + B + D
+    cruzres10d7.innerHTML = C + A + D + B
+    cruzres11d7.innerHTML = C + B + A + D
+    cruzres12d7.innerHTML = C + B + D + A
+    cruzres13d7.innerHTML = D + A + B + C
+    cruzres14d7.innerHTML = D + B + C + A
+    cruzres15d7.innerHTML = D + B + A + C
+    cruzres16d7.innerHTML = D + A + B + C
+
+}
+
+function execfunc(){
+    cruz();
+    cruz_4();
+    cruz_7();
 }

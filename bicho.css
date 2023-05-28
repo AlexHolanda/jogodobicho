@@ -58,7 +58,7 @@ a{
 
 .container .column {
     width: 400px;
-    height: 620px;
+    height: 1000px;
     background-color: #FFF;    
     border-radius: 10px;
     overflow: hidden;
@@ -68,6 +68,7 @@ a{
     display: block;
     flex-direction: column;
     align-items: center;
+    height: 900px;
 }
 
 #playLoto{
@@ -120,8 +121,9 @@ a{
  justify-content: center;
  text-align: center;
  display: flex;
- height: 55px;
+ height: 350px;
  border-radius: 0px 0px 20px 20px;
+ margin-top: 0px;
 }
 
 .box-1{
@@ -160,27 +162,7 @@ a{
               5px 0px 0px #0a0a0a;
 }
 
-#Lista{
-    color: #000;
-    font-weight: bold;
-}
 
-#lista1, #lista2, #lista3, #lista4, #lista5{
-    color: #000;
-    align-items: center;
-    justify-content: center;
-
-}
-.lista{
-    background-color: #DDD;
-    height: 50px;
-    margin-top: 5px;
-    width: 98%;
-    margin-left: 4px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #898787;
-}
 
 .resnum{
     width: 170px;
@@ -318,4 +300,19 @@ a{
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: 500px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'hFixo cruzres1'
+        'hFixo cruzres2'
+        'hFixo cruzres3';
+    
+}
+
+.cruzres{
+    display: grid;
+    gap: 10px;
+
 }
