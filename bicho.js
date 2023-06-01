@@ -66,6 +66,8 @@ function gerar(){
 
         
 
+        
+
         resultado = ""
         var resultado = sorteio(0, 10);
         if (jogo2.length <= 3) {
@@ -115,6 +117,26 @@ function gerar(){
         span22.innerHTML = jogo6[1];
         span23.innerHTML = jogo6[2];
         span24.innerHTML = jogo6[3];
+
+        duquedez1.innerHTML = (`${jogo1[2]}${jogo1[3]} - ${jogo2[2]}${jogo2[3]} `);
+        duquedez2.innerHTML = (`${jogo1[2]}${jogo1[3]} - ${jogo3[2]}${jogo3[3]} `);
+        duquedez3.innerHTML = (`${jogo1[2]}${jogo1[3]} - ${jogo4[2]}${jogo4[3]} `);
+        duquedez4.innerHTML = (`${jogo1[2]}${jogo1[3]} - ${jogo5[2]}${jogo5[3]} `);
+        duquedez5.innerHTML = (`${jogo1[2]}${jogo1[3]} - ${jogo6[2]}${jogo6[3]} `);
+
+        duquedez6.innerHTML = (`${jogo2[2]}${jogo2[3]} - ${jogo3[2]}${jogo3[3]} `);
+        duquedez7.innerHTML = (`${jogo2[2]}${jogo2[3]} - ${jogo4[2]}${jogo4[3]} `);
+        duquedez8.innerHTML = (`${jogo2[2]}${jogo2[3]} - ${jogo5[2]}${jogo5[3]} `);
+        duquedez9.innerHTML = (`${jogo2[2]}${jogo2[3]} - ${jogo6[2]}${jogo6[3]} `);
+
+        duquedez10.innerHTML = (`${jogo3[2]}${jogo3[3]} - ${jogo4[2]}${jogo4[3]} `);
+        duquedez11.innerHTML = (`${jogo3[2]}${jogo3[3]} - ${jogo5[2]}${jogo5[3]} `);
+        duquedez12.innerHTML = (`${jogo3[2]}${jogo3[3]} - ${jogo6[2]}${jogo6[3]} `);
+
+        duquedez13.innerHTML = (`${jogo4[2]}${jogo4[3]} - ${jogo5[2]}${jogo5[3]} `);
+        duquedez14.innerHTML = (`${jogo4[2]}${jogo4[3]} - ${jogo6[2]}${jogo6[3]} `);
+
+        duquedez15.innerHTML = (`${jogo5[2]}${jogo5[3]} - ${jogo6[2]}${jogo6[3]} `);
     }
     //Jogo 1
     if ((`${jogo1[2]}${jogo1[3]}`) == '01' || (`${jogo1[2]}${jogo1[3]}`) == '02' || (`${jogo1[2]}${jogo1[3]}`) == '03' || (`${jogo1[2]}${jogo1[3]}`) == '04'){
