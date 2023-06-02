@@ -40,6 +40,7 @@ var jogo3 = [];
 var jogo4 = [];
 var jogo5 = [];
 var jogo6 = [];
+var ternoGrupo = [];
 
 var cruzdata = document.getElementById('cruzdata')
 var cruz1 = document.getElementById('cruz1')
@@ -524,23 +525,23 @@ function cruz() {
     }
 
     var cruz2dia1 = cruz2dia.toString()
-    if (cruz2dia <= 9){
-    var B = cruz2dia1.substring(0, 1)
+    if (cruz2dia <= 9) {
+        var B = cruz2dia1.substring(0, 1)
     } else {
         var B = cruz2dia1.substring(1, 2)
     }
 
     var cruz3dia1 = cruz3dia.toString()
-    if (cruz3dia <= 9){
-    var C = cruz3dia1.substring(0,1)
-    } else{
+    if (cruz3dia <= 9) {
+        var C = cruz3dia1.substring(0, 1)
+    } else {
         var C = cruz3dia1.substring(1, 2)
     }
 
     var cruz4dia1 = cruz4dia.toString()
-    if(cruz4dia <= 9){
-    var D = cruz4dia1.substring(0, 1)
-    } else{
+    if (cruz4dia <= 9) {
+        var D = cruz4dia1.substring(0, 1)
+    } else {
         var D = cruz4dia1.substring(1, 2)
     }
 
@@ -582,27 +583,27 @@ function cruz_4() {
     }
 
     var cruz2diad4_ = cruz2diad4.toString()
-    if (cruz2diad4 <= 9){
-    var B = cruz2diad4_.substring(0, 1)
+    if (cruz2diad4 <= 9) {
+        var B = cruz2diad4_.substring(0, 1)
     } else {
         var B = cruz2diad4_.substring(1, 2)
     }
 
     var cruz3diad4_ = cruz3diad4.toString()
-    if (cruz3diad4 <= 9){
-    var C = cruz3diad4_.substring(0,1)
-    } else{
+    if (cruz3diad4 <= 9) {
+        var C = cruz3diad4_.substring(0, 1)
+    } else {
         var C = cruz3diad4_.substring(1, 2)
     }
 
     var cruz4dia4_ = cruz4dia4.toString()
-    if(cruz4dia4 <= 9){
-    var D = cruz4dia4_.substring(0, 1)
-    } else{
+    if (cruz4dia4 <= 9) {
+        var D = cruz4dia4_.substring(0, 1)
+    } else {
         var D = cruz4dia4_.substring(1, 2)
     }
 
-    
+
 
     cruzres1d4.innerHTML = A + B + C + D
     cruzres2d4.innerHTML = A + B + D + C
@@ -640,23 +641,23 @@ function cruz_7() {
     }
 
     var cruz2diad7_ = cruz2diad7.toString()
-    if (cruz2diad7 <= 9){
-    var B = cruz2diad7_.substring(0, 1)
+    if (cruz2diad7 <= 9) {
+        var B = cruz2diad7_.substring(0, 1)
     } else {
         var B = cruz2diad7_.substring(1, 2)
     }
 
     var cruz3diad7_ = cruz3diad7.toString()
-    if (cruz3diad7 <= 9){
-    var C = cruz3diad7_.substring(0,1)
-    } else{
+    if (cruz3diad7 <= 9) {
+        var C = cruz3diad7_.substring(0, 1)
+    } else {
         var C = cruz3diad7_.substring(1, 2)
     }
 
     var cruz4diad7_ = cruz4diad7.toString()
-    if(cruz4diad7 <= 9){
-    var D = cruz4diad7_.substring(0, 1)
-    } else{
+    if (cruz4diad7 <= 9) {
+        var D = cruz4diad7_.substring(0, 1)
+    } else {
         var D = cruz4diad7_.substring(1, 2)
     }
 
@@ -683,4 +684,125 @@ function execfunc() {
     cruz();
     cruz_4();
     cruz_7();
+    geraTernoGrupo();
+}
+
+function geraTernoGrupo() {
+
+    while (ternoGrupo.length <= 14) {
+        var resultado = sorteio(1, 26);
+        if (!ternoGrupo.includes(resultado)) {
+            if (ternoGrupo.length <= 14) {
+                ternoGrupo.push(resultado);
+            }
+        }
+    }
+
+    ternog1.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[2]}`)
+    ternog2.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[3]}`)
+    ternog3.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[4]}`)
+    ternog4.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[5]}`)
+    ternog5.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[6]}`)
+    ternog6.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[7]}`)
+    ternog7.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[8]}`)
+
+    ternog8.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[9]}`)
+    ternog9.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[10]}`)
+    ternog10.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[11]}`)
+    ternog11.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[12]}`)
+    ternog12.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[13]}`)
+    ternog13.innerHTML = (`${ternoGrupo[0]}-${ternoGrupo[1]}-${ternoGrupo[14]}`)
+    ternog14.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[3]}`)
+
+    ternog15.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[4]}`)
+    ternog16.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[5]}`)
+    ternog17.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[6]}`)
+    ternog18.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[7]}`)
+    ternog19.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[8]}`)
+    ternog20.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[9]}`)
+    ternog21.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[10]}`)
+
+    ternog22.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[11]}`)
+    ternog23.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[12]}`)
+    ternog24.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[13]}`)
+    ternog25.innerHTML = (`${ternoGrupo[1]}-${ternoGrupo[2]}-${ternoGrupo[14]}`)
+    ternog26.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[4]}`)
+    ternog27.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[5]}`)
+    ternog28.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[6]}`)
+
+    ternog29.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[7]}`)
+    ternog30.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[8]}`)
+    ternog31.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[9]}`)
+    ternog32.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[10]}`)
+    ternog33.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[11]}`)
+    ternog34.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[12]}`)
+    ternog35.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[13]}`)
+
+    ternog36.innerHTML = (`${ternoGrupo[2]}-${ternoGrupo[3]}-${ternoGrupo[14]}`)
+    ternog37.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[5]}`)
+    ternog38.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[6]}`)
+    ternog39.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[7]}`)
+    ternog40.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[8]}`)
+    ternog41.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[9]}`)
+    ternog42.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[10]}`)
+
+    ternog43.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[11]}`)
+    ternog44.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[12]}`)
+    ternog45.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[13]}`)
+    ternog46.innerHTML = (`${ternoGrupo[3]}-${ternoGrupo[4]}-${ternoGrupo[14]}`)
+    ternog47.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[6]}`)
+    ternog48.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[7]}`)
+    ternog49.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[8]}`)
+
+    ternog50.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[6]}`)
+    ternog51.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[7]}`)
+    ternog52.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[8]}`)
+    ternog53.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[9]}`)
+    ternog54.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[10]}`)
+    ternog55.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[11]}`)
+    ternog56.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[12]}`)
+
+    ternog57.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[13]}`)
+    ternog58.innerHTML = (`${ternoGrupo[4]}-${ternoGrupo[5]}-${ternoGrupo[14]}`)
+    ternog59.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[7]}`)
+    ternog60.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[8]}`)
+    ternog61.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[9]}`)
+    ternog62.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[10]}`)
+    ternog63.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[11]}`)
+
+    ternog64.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[12]}`)
+    ternog65.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[13]}`)
+    ternog66.innerHTML = (`${ternoGrupo[5]}-${ternoGrupo[6]}-${ternoGrupo[14]}`)
+    ternog67.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[8]}`)
+    ternog68.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[9]}`)
+    ternog69.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[10]}`)
+    ternog70.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[11]}`)
+
+    ternog71.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[12]}`)
+    ternog72.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[13]}`)
+    ternog73.innerHTML = (`${ternoGrupo[6]}-${ternoGrupo[7]}-${ternoGrupo[14]}`)
+    ternog74.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[9]}`)
+    ternog75.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[10]}`)
+    ternog76.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[11]}`)
+    ternog77.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[12]}`)
+
+    ternog78.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[13]}`)
+    ternog79.innerHTML = (`${ternoGrupo[7]}-${ternoGrupo[8]}-${ternoGrupo[14]}`)
+    ternog80.innerHTML = (`${ternoGrupo[8]}-${ternoGrupo[9]}-${ternoGrupo[10]}`)
+    ternog81.innerHTML = (`${ternoGrupo[8]}-${ternoGrupo[9]}-${ternoGrupo[11]}`)
+    ternog82.innerHTML = (`${ternoGrupo[8]}-${ternoGrupo[9]}-${ternoGrupo[12]}`)
+    ternog83.innerHTML = (`${ternoGrupo[8]}-${ternoGrupo[9]}-${ternoGrupo[13]}`)
+    ternog84.innerHTML = (`${ternoGrupo[8]}-${ternoGrupo[9]}-${ternoGrupo[14]}`)
+
+    ternog85.innerHTML = (`${ternoGrupo[9]}-${ternoGrupo[10]}-${ternoGrupo[11]}`)
+    ternog86.innerHTML = (`${ternoGrupo[9]}-${ternoGrupo[10]}-${ternoGrupo[12]}`)
+    ternog87.innerHTML = (`${ternoGrupo[9]}-${ternoGrupo[10]}-${ternoGrupo[13]}`)
+    ternog88.innerHTML = (`${ternoGrupo[9]}-${ternoGrupo[10]}-${ternoGrupo[14]}`)
+    ternog89.innerHTML = (`${ternoGrupo[10]}-${ternoGrupo[11]}-${ternoGrupo[12]}`)
+    ternog90.innerHTML = (`${ternoGrupo[10]}-${ternoGrupo[11]}-${ternoGrupo[13]}`)
+    ternog91.innerHTML = (`${ternoGrupo[10]}-${ternoGrupo[11]}-${ternoGrupo[14]}`)
+
+    ternog92.innerHTML = (`${ternoGrupo[11]}-${ternoGrupo[12]}-${ternoGrupo[13]}`)
+    ternog93.innerHTML = (`${ternoGrupo[11]}-${ternoGrupo[12]}-${ternoGrupo[14]}`)
+    ternog94.innerHTML = (`${ternoGrupo[12]}-${ternoGrupo[13]}-${ternoGrupo[14]}`)
 }
